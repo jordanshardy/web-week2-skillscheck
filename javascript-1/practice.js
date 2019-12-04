@@ -185,6 +185,6 @@ console.log(enemies)
 
 // Using the people array above, get a total of the awesomeLevel from all the people, and store that value in a variable named 'totallyAwesome'. Use .reduce().
 
-var totallyAwesome = people.reduce(function(prev, current) {
-	return prev + current.awesomeLevel;
+var totallyAwesome = people.reduce(function(acc, element) {
+	return acc + element.awesomeLevel;
   }, 0);
